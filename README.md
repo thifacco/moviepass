@@ -26,6 +26,7 @@ Essa é uma API desenvolvida com Java Spring Boot para resolver um case de reser
 4️. Apenas tíckets com recibo confirmado são considerados válidos para uso.
 
 ## Esquema do banco de dados
+![schema-db](https://github.com/thifacco/moviepass-springboot-api/blob/master/db/schema-db-MoviePress.jpg)
 
 ## Endpoints
 
