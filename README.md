@@ -21,8 +21,11 @@ Essa é uma API desenvolvida com Java Spring Boot para resolver um case de reser
 
 ## Fluxo de Compra
 1. O usuário compra o tícket, mas ele ainda não está válido.
+
 2️. Um recibo é gerado com status = 'pending'.
+
 3. Quando o pagamento for confirmado, o status do recibo muda para 'confirmed'.
+
 4️. Apenas tíckets com recibo confirmado são considerados válidos para uso.
 
 ## Esquema do banco de dados
@@ -31,21 +34,21 @@ Essa é uma API desenvolvida com Java Spring Boot para resolver um case de reser
 ## Endpoints
 
 - Usuário
-   - [POST] /user: cria um novo usuário
+   - POST /user: cria um novo usuário
 
 - Filme
-   - [POST] /movie: cria um novo filme
+   - POST /movie: cria um novo filme
 
 - Sala
-   - [POST] /room: cria uma nova sala
-   - [POST] /room/addChair: cria uma nova cadeira em uma sala
+   - POST /room: cria uma nova sala
+   - POST /room/addChair: cria uma nova cadeira em uma sala
 
 - Sessão
-   - [POST] /session: cria uma nova sessão com um filme em uma sala
+   - POST /session: cria uma nova sessão com um filme em uma sala
 
 - Tícket
-   - [POST] /ticket: cria um ticket para um usuário, em uma sessão e com uma cadeira selecionada
-   - [POST] /ticket/payment: realiza o pagamento do ticket e cria um novo recibo
-   - [PUT] /ticket/payment/confirm: confirma o pagamento do ticket
-   - [GET] /ticket/receipt: visualiza o recibo da compra do ticket
-   - [GET] /ticket/status: verifica se o ticket é valido para sessão
+   - POST /ticket: cria um ticket para um usuário, em uma sessão e com uma cadeira selecionada
+   - POST /ticket/payment: realiza o pagamento do ticket e cria um novo recibo
+   - PATCH /ticket/payment/confirm: confirma o pagamento do ticket
+   - GET /ticket/receipt: visualiza o recibo da compra do ticket
+   - GET /ticket/status: verifica se o ticket é valido para sessão
