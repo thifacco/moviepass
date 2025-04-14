@@ -1,3 +1,5 @@
+![moviepass-logo](https://github.com/thifacco/moviepass-springboot-api/blob/master/db/moviepass.jpg)
+
 # MoviePass Spring Boot API
 
 Essa é uma API desenvolvida com Java Spring Boot para resolver um case de reserva de ingressos de cinema.
