@@ -1,4 +1,4 @@
-![moviepass-logo](https://github.com/thifacco/moviepass-springboot-api/blob/master/db/moviepass.jpg)
+![moviepass-logo](https://github.com/thifacco/moviepass-springboot-api/blob/master/schema.db/moviepass.jpg)
 
 # MoviePass Spring Boot API
 
