@@ -35,22 +35,27 @@ Essa é uma API desenvolvida com Java Spring Boot para resolver um case de reser
 
 ## Endpoints
 
-- Usuário
-   - POST /user: cria um novo usuário
+### Usuário
+**POST** /user (cria um novo usuário)
 
-- Filme
-   - POST /movie: cria um novo filme
+### Filme
+**POST** /movie (cria um novo filme)
 
-- Sala
-   - POST /room: cria uma nova sala
-   - POST /room/addChair: cria uma nova cadeira em uma sala
+### Sala
+**POST** /room (cria uma nova sala)
 
-- Sessão
-   - POST /session: cria uma nova sessão com um filme em uma sala
+**POST** /room/addChair (cria uma nova cadeira em uma sala)
 
-- Tícket
-   - POST /ticket: cria um ticket para um usuário, em uma sessão e com uma cadeira selecionada
-   - POST /ticket/payment: realiza o pagamento do ticket e cria um novo recibo
-   - PATCH /ticket/payment/confirm: confirma o pagamento do ticket
-   - GET /ticket/receipt: visualiza o recibo da compra do ticket
-   - GET /ticket/status: verifica se o ticket é valido para sessão
+### Sessão
+**POST** /session (cria uma nova sessão com um filme em uma sala)
+
+### Tícket
+**POST** /ticket (cria um ticket para um usuário, em uma sessão e com uma cadeira selecionada)
+
+**POST** /ticket/payment (realiza o pagamento do ticket e cria um novo recibo)
+
+**PATCH** /ticket/payment/confirm (confirma o pagamento do ticket)
+   
+**GET** /ticket/receipt (visualiza o recibo da compra do ticket)
+
+**GET** /ticket/status (verifica se o ticket é valido para sessão)
